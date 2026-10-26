@@ -1,0 +1,644 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideGo | Vehicle Rental Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header class="navbar">
+    <a href="#home" class="logo">Ride<span>Go.</span></a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#vehicles">Vehicles</a>
+        <a href="#bookings">My Bookings</a>
+        <a href="#provider">Provider</a>
+        <a href="#admin">Admin</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="#login" class="login-btn">Login</a>
+        <a href="#register" class="btn">Sign Up</a>
+    </div>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="tag">YOUR JOURNEY STARTS HERE</span>
+        <h1>Find Your Perfect<br><span>Ride Today.</span></h1>
+        <p>
+            Rent cars, bikes and scooters at affordable prices.
+            Easy booking, flexible rentals and unforgettable journeys.
+        </p>
+        <a href="#vehicles" class="btn">Explore Vehicles →</a>
+        <a href="#about" class="outline-btn">Learn More</a>
+
+        <div class="stats">
+            <div><h3>500+</h3><p>Vehicles</p></div>
+            <div><h3>1,200+</h3><p>Happy Customers</p></div>
+            <div><h3>50+</h3><p>Rental Partners</p></div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=85"
+             alt="Car available for rent">
+        <div class="floating-card">
+            <span>★ 4.9/5</span>
+            <p>Trusted by our customers</p>
+        </div>
+    </div>
+</section>
+
+<!-- SEARCH -->
+<section class="search-section">
+    <h2>Find Your Rental Vehicle</h2>
+    <p>Choose your vehicle and plan your next journey.</p>
+
+    <form class="search-box" action="#vehicles">
+        <div class="field">
+            <label>Vehicle Type</label>
+            <select>
+                <option>All Vehicles</option>
+                <option>Cars</option>
+                <option>Bikes</option>
+                <option>Scooters</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Pickup Location</label>
+            <input type="text" placeholder="Enter city or location">
+        </div>
+
+        <div class="field">
+            <label>Pickup Date</label>
+            <input type="date">
+        </div>
+
+        <div class="field">
+            <label>Return Date</label>
+            <input type="date">
+        </div>
+
+        <button type="submit" class="btn">Search</button>
+    </form>
+</section>
+
+<!-- VEHICLES -->
+<section class="section" id="vehicles">
+    <div class="section-heading">
+        <div>
+            <span class="tag">OUR FLEET</span>
+            <h2>Explore Our Vehicles</h2>
+            <p>Choose the right ride for every occasion.</p>
+        </div>
+        <a href="#booking" class="outline-btn">View All Vehicles →</a>
+    </div>
+
+    <div class="filter-row">
+        <a href="#vehicles" class="filter active">All Vehicles</a>
+        <a href="#cars" class="filter">Cars</a>
+        <a href="#bikes" class="filter">Bikes</a>
+        <a href="#scooters" class="filter">Scooters</a>
+    </div>
+
+    <div class="vehicle-grid">
+
+        <article class="vehicle-card" id="cars">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80"
+                 alt="Sports car">
+            <div class="card-content">
+                <span class="category">CAR · AUTOMATIC</span>
+                <h3>Premium Sports Car</h3>
+                <p class="muted">5 Seats · Petrol · AC</p>
+                <div class="rating">★ 4.9 <span>(120 reviews)</span></div>
+                <div class="card-bottom">
+                    <div><strong>₹3,500</strong><small>/ day</small></div>
+                    <a href="#booking" class="btn">Rent Now</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="vehicle-card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80"
+                 alt="Luxury car">
+            <div class="card-content">
+                <span class="category">CAR · AUTOMATIC</span>
+                <h3>Luxury Sedan</h3>
+                <p class="muted">5 Seats · Petrol · AC</p>
+                <div class="rating">★ 4.8 <span>(96 reviews)</span></div>
+                <div class="card-bottom">
+                    <div><strong>₹2,800</strong><small>/ day</small></div>
+                    <a href="#booking" class="btn">Rent Now</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="vehicle-card" id="bikes">
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80"
+                 alt="Motorcycle">
+            <div class="card-content">
+                <span class="category">BIKE · MANUAL</span>
+                <h3>Adventure Bike</h3>
+                <p class="muted">350 CC · Petrol · 2 Seats</p>
+                <div class="rating">★ 4.7 <span>(84 reviews)</span></div>
+                <div class="card-bottom">
+                    <div><strong>₹1,200</strong><small>/ day</small></div>
+                    <a href="#booking" class="btn">Rent Now</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="vehicle-card" id="scooters">
+            <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?auto=format&fit=crop&w=800&q=80"
+                 alt="Scooter">
+            <div class="card-content">
+                <span class="category">SCOOTER · AUTOMATIC</span>
+                <h3>City Scooter</h3>
+                <p class="muted">110 CC · Petrol · 2 Seats</p>
+                <div class="rating">★ 4.6 <span>(72 reviews)</span></div>
+                <div class="card-bottom">
+                    <div><strong>₹600</strong><small>/ day</small></div>
+                    <a href="#booking" class="btn">Rent Now</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="vehicle-card">
+            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80"
+                 alt="Family car">
+            <div class="card-content">
+                <span class="category">CAR · MANUAL</span>
+                <h3>Family Hatchback</h3>
+                <p class="muted">5 Seats · Petrol · AC</p>
+                <div class="rating">★ 4.5 <span>(63 reviews)</span></div>
+                <div class="card-bottom">
+                    <div><strong>₹1,800</strong><small>/ day</small></div>
+                    <a href="#booking" class="btn">Rent Now</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="vehicle-card">
+            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80"
+                 alt="Street motorcycle">
+            <div class="card-content">
+                <span class="category">BIKE · MANUAL</span>
+                <h3>Street Bike</h3>
+                <p class="muted">200 CC · Petrol · 2 Seats</p>
+                <div class="rating">★ 4.6 <span>(51 reviews)</span></div>
+                <div class="card-bottom">
+                    <div><strong>₹900</strong><small>/ day</small></div>
+                    <a href="#booking" class="btn">Rent Now</a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section class="section light-section" id="booking">
+    <div class="section-heading">
+        <div>
+            <span class="tag">RESERVE YOUR RIDE</span>
+            <h2>Book Your Vehicle</h2>
+            <p>Fill in your rental details.</p>
+        </div>
+    </div>
+
+    <form class="form-card">
+        <div class="form-grid">
+            <div class="field">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="field">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="field">
+                <label>Select Vehicle</label>
+                <select required>
+                    <option value="">Choose a vehicle</option>
+                    <option>Premium Sports Car</option>
+                    <option>Luxury Sedan</option>
+                    <option>Adventure Bike</option>
+                    <option>City Scooter</option>
+                    <option>Family Hatchback</option>
+                    <option>Street Bike</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Pickup Location</label>
+                <input type="text" placeholder="Pickup location" required>
+            </div>
+            <div class="field">
+                <label>Pickup Date</label>
+                <input type="date" required>
+            </div>
+            <div class="field">
+                <label>Return Date</label>
+                <input type="date" required>
+            </div>
+            <div class="field">
+                <label>Pickup Time</label>
+                <input type="time">
+            </div>
+            <div class="field">
+                <label>Payment Method</label>
+                <select>
+                    <option>Pay at Pickup</option>
+                    <option>UPI</option>
+                    <option>Credit / Debit Card</option>
+                </select>
+            </div>
+        </div>
+        <label class="check-row">
+            <input type="checkbox" required>
+            I agree to the rental terms and conditions.
+        </label>
+        <button type="submit" class="btn">Confirm Booking</button>
+        <p class="muted note">Demo interface: booking and payment are not processed.</p>
+    </form>
+</section>
+
+<!-- CUSTOMER DASHBOARD -->
+<section class="section" id="bookings">
+    <div class="section-heading">
+        <div>
+            <span class="tag">CUSTOMER PORTAL</span>
+            <h2>My Dashboard</h2>
+            <p>Overview of your rental activity.</p>
+        </div>
+    </div>
+
+    <div class="dashboard-stats">
+        <div class="stat-card"><span>Total Bookings</span><h3>12</h3><p>All-time bookings</p></div>
+        <div class="stat-card"><span>Active Rentals</span><h3>02</h3><p>Currently ongoing</p></div>
+        <div class="stat-card"><span>Completed</span><h3>09</h3><p>Successful rentals</p></div>
+        <div class="stat-card"><span>Total Spending</span><h3>₹24,500</h3><p>Demo amount</p></div>
+    </div>
+
+    <div class="table-wrap">
+        <h3>Booking History</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Booking ID</th>
+                    <th>Vehicle</th>
+                    <th>Rental Dates</th>
+                    <th>Amount</th>
+                    <th>Payment</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#RG1001</td>
+                    <td>Luxury Sedan</td>
+                    <td>10–12 Oct</td>
+                    <td>₹5,600</td>
+                    <td>Paid</td>
+                    <td><span class="status green">Completed</span></td>
+                </tr>
+                <tr>
+                    <td>#RG1002</td>
+                    <td>Adventure Bike</td>
+                    <td>26–28 Oct</td>
+                    <td>₹2,400</td>
+                    <td>Pending</td>
+                    <td><span class="status yellow">Confirmed</span></td>
+                </tr>
+                <tr>
+                    <td>#RG1003</td>
+                    <td>City Scooter</td>
+                    <td>30–31 Oct</td>
+                    <td>₹600</td>
+                    <td>Unpaid</td>
+                    <td><span class="status blue">Upcoming</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- LOGIN -->
+<section class="section light-section" id="login">
+    <div class="auth-card">
+        <span class="tag">WELCOME BACK</span>
+        <h2>Login to RideGo</h2>
+        <p class="muted">Access your rentals and account.</p>
+        <form>
+            <div class="field">
+                <label>Email Address</label>
+                <input type="email" placeholder="name@example.com" required>
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input type="password" placeholder="Enter password" required>
+            </div>
+            <div class="auth-extra">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#login">Forgot password?</a>
+            </div>
+            <button class="btn full-btn" type="submit">Login</button>
+        </form>
+        <p class="auth-bottom">Don't have an account? <a href="#register">Register</a></p>
+    </div>
+</section>
+
+<!-- REGISTRATION -->
+<section class="section" id="register">
+    <div class="auth-card">
+        <span class="tag">JOIN OUR COMMUNITY</span>
+        <h2>Create an Account</h2>
+        <p class="muted">Register to start your rental journey.</p>
+        <form>
+            <div class="field">
+                <label>Full Name</label>
+                <input type="text" placeholder="Your full name" required>
+            </div>
+            <div class="field">
+                <label>Email Address</label>
+                <input type="email" placeholder="Your email" required>
+            </div>
+            <div class="field">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Your phone number" required>
+            </div>
+            <div class="field">
+                <label>Account Type</label>
+                <select>
+                    <option>Customer</option>
+                    <option>Rental Provider</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input type="password" placeholder="Create a password" required>
+            </div>
+            <button type="submit" class="btn full-btn">Create Account</button>
+        </form>
+        <p class="auth-bottom">Already registered? <a href="#login">Login</a></p>
+    </div>
+</section>
+
+<!-- PROVIDER DASHBOARD -->
+<section class="section light-section" id="provider">
+    <div class="section-heading">
+        <div>
+            <span class="tag">PARTNER PORTAL</span>
+            <h2>Rental Provider Dashboard</h2>
+            <p>Manage vehicles, customers and rental operations.</p>
+        </div>
+        <a href="#add-vehicle" class="btn">+ Add Vehicle</a>
+    </div>
+
+    <div class="dashboard-stats">
+        <div class="stat-card"><span>My Vehicles</span><h3>18</h3><p>Fleet size</p></div>
+        <div class="stat-card"><span>Available</span><h3>12</h3><p>Ready to rent</p></div>
+        <div class="stat-card"><span>Active Bookings</span><h3>06</h3><p>Current rentals</p></div>
+        <div class="stat-card"><span>Monthly Revenue</span><h3>₹85,000</h3><p>Demo revenue</p></div>
+    </div>
+
+    <div class="table-wrap">
+        <h3>Vehicle Management</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Vehicle</th>
+                    <th>Category</th>
+                    <th>Price / Day</th>
+                    <th>Availability</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Luxury Sedan</td>
+                    <td>Car</td>
+                    <td>₹2,800</td>
+                    <td><span class="status green">Available</span></td>
+                    <td><a href="#add-vehicle">Edit</a> · <a href="#provider">Remove</a></td>
+                </tr>
+                <tr>
+                    <td>Adventure Bike</td>
+                    <td>Bike</td>
+                    <td>₹1,200</td>
+                    <td><span class="status yellow">Rented</span></td>
+                    <td><a href="#provider">Edit</a> · <a href="#provider">Details</a></td>
+                </tr>
+                <tr>
+                    <td>City Scooter</td>
+                    <td>Scooter</td>
+                    <td>₹600</td>
+                    <td><span class="status green">Available</span></td>
+                    <td><a href="#provider">Edit</a> · <a href="#provider">Remove</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="two-column">
+        <div class="panel" id="add-vehicle">
+            <h3>Add / Update Vehicle</h3>
+            <form>
+                <div class="field"><label>Vehicle Name</label><input type="text" placeholder="Enter vehicle name"></div>
+                <div class="field"><label>Category</label><select><option>Car</option><option>Bike</option><option>Scooter</option></select></div>
+                <div class="field"><label>Price Per Day (₹)</label><input type="number" placeholder="Enter rental price"></div>
+                <div class="field"><label>Vehicle Image URL</label><input type="url" placeholder="https://example.com/image.jpg"></div>
+                <div class="field"><label>Availability</label><select><option>Available</option><option>Unavailable</option><option>Under Maintenance</option></select></div>
+                <button class="btn" type="submit">Save Vehicle</button>
+            </form>
+        </div>
+
+        <div class="panel">
+            <h3>Maintenance Scheduling</h3>
+            <form>
+                <div class="field"><label>Select Vehicle</label><select><option>Luxury Sedan</option><option>Adventure Bike</option><option>City Scooter</option></select></div>
+                <div class="field"><label>Maintenance Type</label><input type="text" placeholder="e.g. Servicing, oil change"></div>
+                <div class="field"><label>Scheduled Date</label><input type="date"></div>
+                <div class="field"><label>Estimated Cost (₹)</label><input type="number" placeholder="Estimated cost"></div>
+                <button class="btn" type="submit">Schedule Maintenance</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ADMIN -->
+<section class="section" id="admin">
+    <div class="section-heading">
+        <div>
+            <span class="tag">CONTROL CENTER</span>
+            <h2>Admin Dashboard</h2>
+            <p>Platform overview and management.</p>
+        </div>
+        <span class="status blue">Administrator View</span>
+    </div>
+
+    <div class="dashboard-stats">
+        <div class="stat-card"><span>Total Users</span><h3>1,250</h3><p>Registered accounts</p></div>
+        <div class="stat-card"><span>Total Vehicles</span><h3>500</h3><p>Listed on platform</p></div>
+        <div class="stat-card"><span>Total Bookings</span><h3>3,480</h3><p>All booking records</p></div>
+        <div class="stat-card"><span>Platform Revenue</span><h3>₹4.5L</h3><p>Sample analytics</p></div>
+    </div>
+
+    <div class="two-column">
+        <div class="panel">
+            <h3>Booking Requests</h3>
+            <div class="request-item">
+                <div><strong>#RG1004 · Premium Sports Car</strong><p class="muted">Customer: Rahul Sharma</p></div>
+                <span class="status yellow">Pending</span>
+            </div>
+            <div class="request-item">
+                <div><strong>#RG1005 · City Scooter</strong><p class="muted">Customer: Aman Verma</p></div>
+                <span class="status green">Approved</span>
+            </div>
+            <div class="request-item">
+                <div><strong>#RG1006 · Adventure Bike</strong><p class="muted">Customer: Neha Singh</p></div>
+                <span class="status blue">Returned</span>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h3>User Management</h3>
+            <div class="request-item"><div><strong>Customer Accounts</strong><p class="muted">Manage registered users</p></div><a href="#admin">View →</a></div>
+            <div class="request-item"><div><strong>Rental Providers</strong><p class="muted">Manage partner accounts</p></div><a href="#admin">View →</a></div>
+            <div class="request-item"><div><strong>Vehicle Listings</strong><p class="muted">Review listed vehicles</p></div><a href="#vehicles">View →</a></div>
+            <div class="request-item"><div><strong>Reports & Analytics</strong><p class="muted">Bookings and revenue</p></div><a href="#admin">View →</a></div>
+        </div>
+    </div>
+</section>
+
+<!-- PAYMENT -->
+<section class="section light-section" id="payment">
+    <div class="auth-card">
+        <span class="tag">SECURE CHECKOUT DESIGN</span>
+        <h2>Payment Summary</h2>
+        <p class="muted">Example booking invoice.</p>
+        <div class="invoice-row"><span>Vehicle rental</span><strong>₹3,500</strong></div>
+        <div class="invoice-row"><span>Rental duration</span><strong>2 days</strong></div>
+        <div class="invoice-row"><span>Service fee</span><strong>₹200</strong></div>
+        <div class="invoice-row"><span>Taxes (sample)</span><strong>₹300</strong></div>
+        <div class="invoice-row total"><span>Total Amount</span><strong>₹7,500</strong></div>
+        <div class="field">
+            <label>Choose Payment Method</label>
+            <select><option>UPI</option><option>Debit / Credit Card</option><option>Pay at Pickup</option></select>
+        </div>
+        <button type="button" class="btn full-btn">Proceed to Payment</button>
+        <p class="muted note">Visual demonstration only. No real payment is collected.</p>
+    </div>
+</section>
+
+<!-- NOTIFICATIONS -->
+<section class="section" id="notifications">
+    <span class="tag">STAY UPDATED</span>
+    <h2>Notifications</h2>
+    <div class="panel notification">
+        <span class="notification-icon">✓</span>
+        <div><strong>Booking Confirmed</strong><p>Your demo booking #RG1002 has been confirmed.</p><small>Today · 10:30 AM</small></div>
+    </div>
+    <div class="panel notification">
+        <span class="notification-icon">₹</span>
+        <div><strong>Payment Reminder</strong><p>Your upcoming rental has a pending payment.</p><small>Yesterday</small></div>
+    </div>
+    <div class="panel notification">
+        <span class="notification-icon">↻</span>
+        <div><strong>Return Reminder</strong><p>Please remember your scheduled vehicle return date.</p><small>2 days ago</small></div>
+    </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section light-section" id="reviews">
+    <div class="section-heading">
+        <div>
+            <span class="tag">CUSTOMER FEEDBACK</span>
+            <h2>What Our Customers Say</h2>
+        </div>
+    </div>
+
+    <div class="review-grid">
+        <article class="review-card">
+            <div class="rating">★★★★★</div>
+            <p>"The booking interface is simple, and the vehicle options are easy to compare."</p>
+            <h4>Arjun Mehta</h4>
+            <span class="muted">Demo review</span>
+        </article>
+        <article class="review-card">
+            <div class="rating">★★★★★</div>
+            <p>"A convenient design for finding a vehicle for a weekend trip."</p>
+            <h4>Priya Sharma</h4>
+            <span class="muted">Demo review</span>
+        </article>
+        <article class="review-card">
+            <div class="rating">★★★★☆</div>
+            <p>"I like having booking history and rental details together in one place."</p>
+            <h4>Rohan Verma</h4>
+            <span class="muted">Demo review</span>
+        </article>
+    </div>
+
+    <div class="panel review-form">
+        <h3>Write a Review</h3>
+        <form>
+            <div class="field"><label>Your Name</label><input type="text" placeholder="Enter your name"></div>
+            <div class="field"><label>Vehicle</label><select><option>Premium Sports Car</option><option>Luxury Sedan</option><option>Adventure Bike</option><option>City Scooter</option></select></div>
+            <div class="field"><label>Rating</label><select><option>★★★★★ - Excellent</option><option>★★★★☆ - Very Good</option><option>★★★☆☆ - Good</option></select></div>
+            <div class="field"><label>Your Review</label><textarea rows="4" placeholder="Share your experience"></textarea></div>
+            <button type="submit" class="btn">Submit Review</button>
+        </form>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+    <h2>Everything You Need for a Better Journey</h2>
+    <p>RideGo brings customers and rental providers together through one convenient platform.</p>
+    <div class="feature-grid">
+        <div><span>🚘</span><h3>Wide Selection</h3><p>Cars, bikes and scooters.</p></div>
+        <div><span>📅</span><h3>Easy Booking</h3><p>Choose your preferred dates.</p></div>
+        <div><span>💳</span><h3>Payment Options</h3><p>Designed for flexible checkout.</p></div>
+        <div><span>🛡️</span><h3>Rental Management</h3><p>Organized vehicle and booking records.</p></div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div>
+        <a href="#home" class="logo">Ride<span>Go.</span></a>
+        <p>Your journey, our priority.</p>
+    </div>
+    <div>
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#vehicles">Vehicles</a>
+        <a href="#booking">Book a Ride</a>
+    </div>
+    <div>
+        <h4>Account</h4>
+        <a href="#login">Login</a>
+        <a href="#register">Register</a>
+        <a href="#bookings">My Bookings</a>
+    </div>
+    <div>
+        <h4>Management</h4>
+        <a href="#provider">Provider Dashboard</a>
+        <a href="#admin">Admin Dashboard</a>
+        <a href="#notifications">Notifications</a>
+    </div>
+</footer>
+
+<div class="copyright">
+    © 2026 RideGo Vehicle Rental Platform | College Project Demo
+</div>
+
+</body>
+</html>
